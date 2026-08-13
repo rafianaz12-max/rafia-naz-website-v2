@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Clash Display", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Dark theme (default) tokens — values are "R G B" for Tailwind's rgb(var(..) / alpha) pattern */
+  --color-background: 15 23 42;      /* #0F172A */
+  --color-surface: 30 41 59;         /* #1E293B */
+  --color-border: 148 163 184;       /* slate-400, used at low alpha */
+  --color-foreground: 248 250 252;   /* #F8FAFC */
+  --color-foreground-muted: 148 163 184; /* slate-400 */
+  --color-accent-text: 34 211 238;   /* cyan-400 — readable on dark */
+  --color-primary-text: 167 139 250; /* violet-400 — readable on dark */
+
+  color-scheme: dark;
+}
+
+html.light {
+  --color-background: 248 250 252;   /* #F8FAFC */
+  --color-surface: 255 255 255;      /* #FFFFFF */
+  --color-border: 15 23 42;          /* slate-900, used at low alpha */
+  --color-foreground: 15 23 42;      /* #0F172A */
+  --color-foreground-muted: 71 85 105; /* slate-600 — stronger contrast on white */
+  --color-accent-text: 8 145 178;    /* cyan-700 — readable on white */
+  --color-primary-text: 109 40 217;  /* violet-700 — readable on white */
+
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  @apply bg-background text-foreground font-body antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(139, 92, 246, 0.35);
+  color: #f8fafc;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8b5cf6, #22d3ee);
+  border-radius: 999px;
+  border: 2px solid #0f172a;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  border-color: #f8fafc;
+}
+
+/* Keyboard accessibility: always show a clear focus ring */
+:focus-visible {
+  outline: 2px solid #22d3ee;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Glassmorphism primitive, reused by GlassCard and any bespoke surface */
+.glass {
+  background: rgba(30, 41, 59, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+html.light .glass {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+/* Gradient text utility */
+.text-gradient {
+  background: linear-gradient(135deg, #a78bfa 0%, #22d3ee 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Animated gradient border glow, used behind hero portrait / featured cards */
+.glow-ring {
+  position: relative;
+}
+
+.glow-ring::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, #8b5cf6, #22d3ee);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.8;
+  animation: glow-pulse 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Utility: hide scrollbar for horizontal marquee/skill strips while keeping scroll function */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
