@@ -1,4 +1,4 @@
-# Rafia Naz — Portfolio
+# Rafia Naz Portfolio
 
 A premium, dark-themed personal portfolio built with Next.js 15 (App Router), TypeScript, Tailwind CSS, and Framer Motion.
 
@@ -33,13 +33,13 @@ Open http://localhost:3000 in your browser.
 
 ## Project Structure
 
-- `src/app` — routes (App Router), one folder per page
-- `src/components` — UI organized by domain (home, about, projects, skills, etc.) plus a shared `ui/` primitives folder
-- `src/data` — all site content (personal info, projects, skills, experience, certificates, services, social links, nav)
-- `src/hooks` — reusable client hooks (scroll progress, mouse position, typing effect, theme, counters)
-- `src/lib` — Framer Motion variants, SEO metadata builder, contact form validation
-- `src/types` — shared TypeScript interfaces
-- `src/utils` — small utilities (className merge, date formatting)
+- `src/app` : routes (App Router), one folder per page
+- `src/components` : UI organized by domain (home, about, projects, skills, etc.) plus a shared `ui/` primitives folder
+- `src/data` : all site content (personal info, projects, skills, experience, certificates, services, social links, nav)
+- `src/hooks` : reusable client hooks (scroll progress, mouse position, typing effect, theme, counters)
+- `src/lib` : Framer Motion variants, SEO metadata builder, contact form validation
+- `src/types` : shared TypeScript interfaces
+- `src/utils` : small utilities (className merge, date formatting)
 
 ## Replacing Placeholder Content
 
