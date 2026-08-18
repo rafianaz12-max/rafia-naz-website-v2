@@ -20,8 +20,8 @@ export const services: Service[] = [
     description:
       "Interfaces that adapt cleanly from mobile to ultra-wide, tested across real breakpoints.",
     features: [
-      "Mobile-first layout systems",
-      "Cross-device QA",
+      "Mobile first layout systems",
+      "Cross device QA",
       "Fluid typography & spacing",
     ],
   },
@@ -30,39 +30,17 @@ export const services: Service[] = [
     title: "Next.js Development",
     icon: "Layers",
     description:
-      "Production-grade Next.js apps using the App Router, server components, and SEO best practices.",
+      "Production grade Next.js apps using the App Router, server components, and SEO best practices.",
     features: [
       "App Router architecture",
       "SEO metadata & sitemaps",
       "Performance-optimized rendering",
     ],
   },
+  
+  
   {
     id: "svc-4",
-    title: "AI Integration",
-    icon: "Sparkles",
-    description:
-      "Embedding LLM-powered features into web apps — grounded, reliable, and well-scoped.",
-    features: [
-      "Prompt design & testing",
-      "Retrieval-grounded responses",
-      "Streaming UI patterns",
-    ],
-  },
-  {
-    id: "svc-5",
-    title: "Performance Optimization",
-    icon: "Gauge",
-    description:
-      "Auditing and improving Core Web Vitals, bundle size, and rendering performance.",
-    features: [
-      "Image & font optimization",
-      "Code-splitting strategy",
-      "Lighthouse-driven fixes",
-    ],
-  },
-  {
-    id: "svc-6",
     title: "UI Development",
     icon: "PenTool",
     description:

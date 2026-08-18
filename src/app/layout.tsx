@@ -18,11 +18,11 @@ const siteUrl = "https://rafianaz.com"; // Replace with your actual site URL
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Rafia Naz | Web Developer & Agentic AI Developer",
+    default: "Rafia Naz Web Developer & Agentic AI Developer",
     template: "%s | Rafia Naz",
   },
   description:
-    "Portfolio of Rafia Naz — Final-Year Mechanical Engineering student, Web Developer, and Agentic AI Developer building AI-powered web applications with Next.js and TypeScript.",
+    "Portfolio of Rafia Naz Final Year Mechanical Engineering student, Web Developer, and Agentic AI Developer building AI-powered web applications with Next.js and TypeScript.",
   keywords: [
     "Rafia Naz",
     "Web Developer",

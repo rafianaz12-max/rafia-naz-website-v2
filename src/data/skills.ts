@@ -8,7 +8,6 @@ export const skillCategories: SkillCategoryData[] = [
       { name: "React", level: 90 },
       { name: "TypeScript", level: 82 },
       { name: "Tailwind CSS", level: 92 },
-      { name: "Framer Motion", level: 78 },
     ],
   },
   {
@@ -16,23 +15,20 @@ export const skillCategories: SkillCategoryData[] = [
     skills: [
       { name: "Node.js", level: 60 },
       { name: "REST APIs", level: 65 },
-      { name: "PostgreSQL", level: 45 },
-      { name: "Firebase", level: 58 },
-    ],
+  ],
   },
   {
     title: "AI Skills",
     skills: [
       { name: "Prompt Engineering", level: 85 },
       { name: "LLM Integration", level: 70 },
-      { name: "AI-Assisted UX Design", level: 75 },
+      { name: "AI Assisted UX Design", level: 75 },
     ],
   },
   {
     title: "Tools",
     skills: [
       { name: "Git & GitHub", level: 80 },
-      { name: "Figma", level: 72 },
       { name: "VS Code", level: 95 },
       { name: "Vercel", level: 78 },
       { name: "SolidWorks", level: 90 },
