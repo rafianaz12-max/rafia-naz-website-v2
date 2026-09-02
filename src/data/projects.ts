@@ -1,6 +1,115 @@
 import { WebProject, MechanicalProject, Project } from "@/types";
 
 export const webProjects: WebProject[] = [
+{
+  kind: "web",
+  slug: "university-of-sargodha-ai",
+  title: "University of Sargodha AI Assistant",
+  shortDescription:
+    "An intelligent AI powered assistant designed to help students quickly find accurate University of Sargodha information.",
+  description:
+    "University of Sargodha AI Assistant is an intelligent university information platform built to make academic information easier to access. The assistant helps students find answers related to admissions, programs, fee structures, university policies, and other institutional information through a conversational AI interface. The system combines structured university data, document-based knowledge retrieval, and AI-generated responses to provide a faster alternative to manually searching through lengthy prospectuses and websites.",
+  category: "AI",
+  technologies: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Google Gemini API",
+    "Vercel",
+  ],
+  features: [
+    "AI-powered conversational assistant for University of Sargodha information",
+    "Document based knowledge system using university prospectus data",
+    "Answers related to admissions, programs, fees, and university policies",
+    "Intelligent search and contextual response generation",
+    "Clean and responsive chatbot interface",
+    "Deployed online for easy public access",
+  ],
+  developmentProcess: [
+    "Collected and structured university information from official prospectuses and fee structure documents",
+    "Processed large university documents into searchable knowledge chunks for efficient information retrieval",
+    "Built a Next.js conversational interface focused on simple and fast student interaction",
+    "Integrated AI capabilities to generate natural language answers based on relevant university information",
+    "Optimized the application for deployment and public accessibility through Vercel",
+  ],
+  challenges: [
+    "Processing large university prospectus documents containing hundreds of pages of information",
+    "Ensuring AI responses remain relevant to official university information",
+    "Handling API limitations and deployment challenges with AI related dependencies",
+    "Making complex academic information easy for students to access through simple questions",
+  ],
+  solutions: [
+    "Converted large documents into structured knowledge chunks to improve information retrieval",
+    "Implemented local search and ranking mechanisms to identify the most relevant information before generating responses",
+    "Designed fallback behavior for cases where information could not be confidently verified",
+    "Created a simple chatbot interface so users can access complex university information without navigating multiple documents",
+  ],
+  conclusion:
+    "University of Sargodha AI Assistant transforms lengthy institutional documents into an accessible conversational experience. The project demonstrates how AI and knowledge retrieval can improve student access to academic information while reducing the time spent searching through prospectuses and university resources.",
+  githubUrl: "https://github.com/rafianaz12-max/rag_chatbot",
+  liveUrl: "https://university-of-sargodha-ai.vercel.app/",
+  bannerImage: "/images/projects/web/uos-chatbot.png",
+  gallery: [
+    "/images/projects/web/uos-chatbot.png",
+  ],
+  featured: true,
+},
+{
+  kind: "web",
+  slug: "flowlab-ai",
+  title: "FlowLab AI",
+  shortDescription:
+    "An interactive virtual Fluid Mechanics laboratory designed to help engineering students understand experiments through digital simulation and AI.",
+  description:
+    "FlowLab AI is a virtual Fluid Mechanics laboratory built to make engineering experiments more accessible and interactive. The platform provides a digital environment where students can explore fundamental Fluid Mechanics concepts and laboratory experiments without relying entirely on physical equipment. It combines engineering education, interactive simulations, structured experiment workflows, and AI-assisted learning into a modern web-based laboratory experience.",
+  category: "AI",
+  technologies: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "AI Integration",
+    "Vercel",
+  ],
+  features: [
+    "Virtual Fluid Mechanics laboratory environment",
+    "Interactive engineering experiment modules",
+    "Reynolds experiment learning module",
+    "Bernoulli principle experiment",
+    "Venturi meter experiment",
+    "Pipe flow analysis",
+    "Pump performance experiments",
+    "Structured theory, procedure, and result-based learning experience",
+    "Responsive interface designed for engineering students",
+  ],
+  developmentProcess: [
+    "Identified the core Fluid Mechanics laboratory experiments that could be transformed into a digital learning experience",
+    "Designed the application architecture around individual experiment modules for better scalability",
+    "Created structured educational content combining theory, experimental procedure, calculations, and results",
+    "Built a responsive web interface focused on making technical engineering concepts easier to explore",
+    "Integrated AI-oriented learning concepts to create a more intelligent and interactive laboratory experience",
+  ],
+  challenges: [
+    "Translating physical laboratory experiments into understandable digital interactions",
+    "Presenting complex Fluid Mechanics concepts without making the interface overwhelming",
+    "Balancing engineering accuracy with a beginner-friendly user experience",
+    "Organizing multiple experiments within one consistent virtual laboratory system",
+  ],
+  solutions: [
+    "Separated every experiment into clear learning stages including theory, apparatus, procedure, and results",
+    "Designed reusable experiment components to maintain consistency across the laboratory",
+    "Focused on intuitive navigation and visual learning instead of dense technical documentation",
+    "Built the platform with a modular architecture so additional engineering experiments can be added in the future",
+  ],
+  conclusion:
+    "FlowLab AI demonstrates how modern web technologies and AI can enhance engineering education by bringing traditional Fluid Mechanics laboratory experiments into a digital environment. The project creates a foundation for accessible, interactive, and scalable virtual engineering laboratories.",
+  githubUrl: "https://github.com/rafianaz12-max/flowlab-ai",
+  liveUrl: "https://flowlab-ai-beta.vercel.app/",
+  bannerImage: "/images/projects/web/flowlab.png",
+  gallery: [
+    "/images/projects/web/flowlab.png",
+  ],
+  featured: true,
+},
   {
     kind: "web",
     slug: "learn-ai-stack",

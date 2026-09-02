@@ -28,7 +28,7 @@ export default function ProjectsPage() {
             Web Development Projects
           </h2>
           <p className="mt-2 text-sm text-foreground-muted">
-            Live, deployed applications — each with a full case study.
+            Live, deployed applications each with a full case study.
           </p>
         </div>
         <ProjectGrid />
@@ -38,7 +38,7 @@ export default function ProjectsPage() {
             Mechanical Engineering Projects
           </h2>
           <p className="mt-2 text-sm text-foreground-muted">
-            Hands-on hardware builds spanning robotics and instrumentation.
+            Hands on hardware builds spanning robotics and instrumentation.
           </p>
         </div>
         <MechanicalProjectGrid />
