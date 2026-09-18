@@ -20,7 +20,7 @@ export default function ProjectsPage() {
           eyebrow="Portfolio"
           title="Projects & Case Studies"
           gradientWord="Projects"
-          description="Five live web applications built with Next.js and AI, plus hands-on mechanical engineering and robotics builds."
+          description="Five live web applications built with Next.js and AI, plus hands on mechanical engineering and robotics builds."
         />
 
         <div className="mb-6">
